@@ -1,0 +1,39 @@
+*{
+    text-decoration: none;
+}
+:root{
+    --colorMenu: white;
+    --fundoMenu: red;
+    --fundoButtonAtivo: darkmagenta;
+    --fontSizeMenu: 1em;
+}
+header{
+
+}
+nav{
+    background-color: var(--fundoMenu);
+    height: 70px;
+    width: 100%;
+}
+#logo{
+    color: var(--colorMenu);
+}
+nav ul{
+    float: right;
+    margin-right: 1%;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: var(--colorMenu);
+    font-size: var(--fontSizeMenu);
+    padding: 7px 13px;
+    border-radius: 4px;
+}
+a.active, a:hover{
+    background-color: var(--fundoButtonAtivo);
+    transition: 0.3s;
+}
